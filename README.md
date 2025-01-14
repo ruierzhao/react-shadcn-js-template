@@ -1,8 +1,34 @@
-# React + Vite
+# React + Vite + Shadcn/ui
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+使用 `vite` 创建的 react + shadcn/ui 模板
 
-Currently, two official plugins are available:
+## devdependencies version
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- vite 6.0.7
+- react 18.3.1
+- tailwindcss 3.4.17
+- postcss 8.5.1
+- autoprefixer 10.4.20
+
+## create command
+
+```sh
+# 使用 vite 创建基础项目
+pnpm create vite@latest
+
+# 添加tailwindcss 依赖
+pnpm add -D tailwindcss postcss autoprefixer
+
+# 使用`tailwindcss cli`生成 tailwindcss 配置
+pnpm dlx tailwindcss init -p
+
+# ... 添加shadcn 的一些配置
+# jsconffig.json jsconfig.app.json vite.config.js
+
+# 根据刚刚的配置使用 shadcn cli 初始化shadcn (会生成`src/lib/utils.js`文件)
+pnpm dlx shadcn@latest init
+
+# 之后随时添加需要的组件(自行生成文件放到`src/components/ui`文件夹下)
+pnpm dlx shadcn@latest add button
+
+```
