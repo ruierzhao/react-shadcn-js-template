@@ -33,3 +33,7 @@ pnpm dlx shadcn@latest init
 pnpm dlx shadcn@latest add button
 
 ```
+
+## preview
+
+![img](./demo.png)
