@@ -1,6 +1,6 @@
 # React + Vite + Shadcn/ui
 
-使用 `vite` 创建的 react + shadcn/ui 模板
+使用 `vite` 创建的 `react` + `shadcn/ui` 的 js 模板。
 
 ## devdependencies version
 
@@ -9,6 +9,7 @@
 - tailwindcss 3.4.17
 - postcss 8.5.1
 - autoprefixer 10.4.20
+- shadcn 2.1.8
 
 ## create command
 
